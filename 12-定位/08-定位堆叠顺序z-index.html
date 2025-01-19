@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位堆叠顺序z-index</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .xd {
+            background-color: red;
+            z-index: 1;
+        }
+
+        .xr {
+            background-color: blue;
+            left: 50px;
+            top: 50px;
+        }
+
+        .gtq {
+            background-color: green;
+            z-index: 2;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xd">熊大</div>
+    <div class="box xr">熊二</div>
+    <div class="box gtq">光头强</div>
+</body>
+
+</html>

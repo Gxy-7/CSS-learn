@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位-脱标</title>
+    <style>
+        .father {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son1 {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son2 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(240, 111, 132);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son1">绝对定位是脱标的！</div>
+        <div class="son2">我没有定位</div>
+    </div>
+</body>
+
+</html>

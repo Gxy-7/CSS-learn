@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承性</title>
+    <style>
+        /* div {
+            color: pink;
+            font-size: larger;
+            font-style: italic;
+        } */
+
+        body {
+            color: skyblue;
+            /* font: 14px / 24px '微软雅黑'; */
+            font: 14px /1.5 '微软雅黑';
+            /* 这个 1.5 就是当前元素文字大小的1.5倍 所以这里就是21像素的行高*/
+        }
+
+        div {
+            /* 这里就是继承了body的行高 */
+            font-size: 20px;
+        }
+
+        /* 行高的继承 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>龙升龙,凤生凤,老鼠的后代打洞</p>
+    </div>
+</body>
+
+</html>

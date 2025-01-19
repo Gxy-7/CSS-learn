@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊性</title>
+    <style>
+        span {
+            /* 加了定位，就可以使行内元素有了宽和高 */
+            position: absolute;
+            top: 200px;
+            width: 200px;
+            height: 150px;
+            background-color: pink;
+        }
+
+        div {
+            /* 块级元素添加位置后不设置宽和高，默认大小是内容大小 */
+            position: absolute;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <span>123</span>
+    <div>abc</div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框常用写法</title>
+    <style>
+        .yuan {
+            /* 要为圆形，盒子必须为正方形 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 就是要圆的半径为正方形边长的一半 */
+            /* border-radius: 100px; */
+            /* 50% 就是宽度和高度的一半 等价于 100px */
+            border-radius: 50%;
+        }
+
+        .yuanju {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 圆角矩形设置为高度的一半 */
+            border-radius: 50px;
+        }
+
+        .radius {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /* 按顺时针来 */
+            /* border-radius: 20px 50px 0 100px; */
+            /* 对角 */
+            /* border-radius: 50px 10px; */
+            /* 单独 */
+            border-top-left-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    1.圆形做法
+    <div class="yuan"></div>
+    2.圆角矩形
+    <div class="yuanju"></div>
+    3.可以设置不同的圆角
+    <div class="radius"></div>
+</body>
+
+</html>

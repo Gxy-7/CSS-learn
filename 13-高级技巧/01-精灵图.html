@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图</title>
+    <style>
+        /* 同一张图片包含多个图片，是通过移动背景位置来 */
+        .box1 {
+            width: 60px;
+            height: 60px;
+            margin: 100px auto;
+            /* 是默认贴近背景图的左上角 */
+            background: url(images/sprites.png) no-repeat;
+            /* 这是移动，注意右移和上移都是负方向 */
+            background-position: -182px 0;
+        }
+
+        .box2 {
+            width: 27px;
+            height: 25px;
+            margin: 20px auto;
+            background: url(images/sprites.png) no-repeat -155px -106px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

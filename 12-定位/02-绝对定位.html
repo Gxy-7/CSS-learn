@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .yeye {
+            /* 以最近一级的有定位的祖先元素为参考点移动位置 */
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: rgb(235, 81, 107);
+        }
+
+        .father {
+            /* 不给父亲盒子一个定位，孩子还是以网页为参照对象 */
+            /* 给父亲盒子定位之后，就只能在父亲盒子里面跑了 */
+            /* position: relative; */
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son {
+            /* 绝对定位 */
+            position: absolute;
+            left: 10px;
+            bottom: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yeye">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+</body>
+
+</html>

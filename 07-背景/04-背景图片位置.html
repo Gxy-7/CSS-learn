@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片位置</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+
+            /* 1.background-position: 方位名词; */
+            /* background-position: center top;   如果是方位名词，交换位置也可以 */
+            /* background-position: top center; */
+            /* 如果省略一个参数，它默认值为居中 */
+            /* 此时 水平一定是靠右侧对齐 第二个参数省略y轴垂直居中 */
+            /* background-position: right; */
+            /* 此时 第一个参数一定是top y轴 顶部对齐   第二个参数省略的是x轴 是水平居中显示的 */
+            /* background-position: top; */
+
+            /* 2.如果是精确坐标  一定是按顺序来的   x轴--y轴*/
+            /* background-position: 50px 20px; */
+            /* 只指定一个就一定是x轴，另一个默认居中 */
+
+            /* 3.混合单位 */
+            /* 此时 一定是 x轴为20px y轴靠右 */
+            background-position: 100px top;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

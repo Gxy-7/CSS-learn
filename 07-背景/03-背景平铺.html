@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平铺</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            /* 还可以加背景颜色 只不过背景图片会压住背景颜色*/
+            background-color: pink;
+            background-image: url(images/logo.png);
+            /* 1.背景图片不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 2.默认情况下是平铺的 */
+            /* background-repeat: repeat; */
+            /* 3.沿x轴平铺 */
+            /* background-repeat: repeat-x; */
+            /* 4.沿y轴平铺 */
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

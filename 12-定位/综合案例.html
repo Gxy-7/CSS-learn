@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝焦点图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+
+        .zuo,
+        .you {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: aliceblue;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .zuo {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+        }
+
+        .you {
+            /* 如果一个盒子既有right属性，又有left属性，会执行left属性。同样的有top 和 bottom 属性，会执行top */
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .xyd {
+            position: absolute;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.3);
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            border-radius: 7px;
+        }
+
+        .xyd li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+            margin: 3px;
+        }
+
+        .box a:hover {
+            color: #ff5000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="images/tb.jpg" alt="taobao" title="淘宝焦点图">
+        <a href="#" class="zuo"> &lt; </a>
+        <a href="#" class="you"> &gt; </a>
+        <ul class="xyd">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
