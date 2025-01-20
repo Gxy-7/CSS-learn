@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局技巧</title>
+    <style>
+        ul li {
+            /* 2、添加定位的情况 */
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 150px;
+            height: 200px;
+            border: 2px red solid;
+            margin-left: -2px;
+        }
+
+        /* ul li:hover {
+            1、如多盒子没有定位，则鼠标经过添加相对定位即可
+            position: relative;
+            border: 2px blue solid;
+        } */
+
+        ul li:hover {
+            /* 2、如多盒子有定位，则鼠标经过添加层级 */
+            z-index: 1;
+            border: 2px blue solid;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
