@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 30px;
+            /* 这是默认的 */
+            box-sizing: content-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 30px;
+            /* 这样就不会撑开盒子了 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        小猪佩奇（撑大了）
+    </p>
+    <div>
+        小猪佩奇
+    </div>
+</body>
+
+</html>

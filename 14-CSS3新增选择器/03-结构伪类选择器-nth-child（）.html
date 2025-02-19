@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child(n)</title>
+    <style>
+        /* 把奇数选出来 odd */
+        ul li:nth-child(odd) {
+            background-color: pink;
+        }
+
+        /* 选择出偶数 even */
+        ul li:nth-child(even) {
+            background-color: rgb(181, 67, 86);
+        }
+
+        /* 如果是2n 就是所有的偶数次 就是关于n的函数，n从0开始*/
+        /* :nth-child(n) 从0开始 n每次加1 往后计算 这里必须是n 不能是其他字母 选择了所有的孩子 */
+        ol li:nth-child(n) {
+            background-color: pink;
+        }
+
+        /* nth-child 会把所有的盒子都排序 */
+        /* 执行时先看 :nth-child(1) 之后回前面看 div */
+        section div:nth-child(1) {
+            background-color: gray;
+        }
+
+        /* 执行时先看 div 之后回后面看 :nth-of-type(1) */
+        section div:nth-of-type(1) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第一个孩子</li>
+        <li>我是第二个孩子</li>
+        <li>我是第三个孩子</li>
+        <li>我是第四个孩子</li>
+        <li>我是第五个孩子</li>
+        <li>我是第六个孩子</li>
+        <li>我是第七个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第一个孩子</li>
+        <li>我是第二个孩子</li>
+        <li>我是第三个孩子</li>
+        <li>我是第四个孩子</li>
+        <li>我是第五个孩子</li>
+        <li>我是第六个孩子</li>
+        <li>我是第七个孩子</li>
+    </ol>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>
