@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D呈现</title>
+    <style>
+        body {
+            perspective: 200px;
+        }
+
+        .box {
+            position: relative;
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            transition: all 1s;
+            /* 让子盒子保持3D效果，写在父盒子上，但作用于子盒子 */
+            transform-style: preserve-3d;
+        }
+
+        .box:hover {
+            transform: rotateY(60deg);
+        }
+
+        .box div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+        }
+
+        .box div:last-child {
+            background-color: purple;
+            transform: rotateX(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>透视</title>
+    <style>
+        body {
+            /* 透视写到被观察的元素的父盒子上面 */
+            perspective: 200px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* z轴越大，同样看起来也越大 */
+            transform: translate3d(1000px, 100px, 100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
