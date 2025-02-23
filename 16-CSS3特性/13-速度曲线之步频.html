@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steps</title>
+    <style>
+        div {
+            font-size: 20px;
+            overflow: hidden;
+            width: 0;
+            height: 25px;
+            background-color: pink;
+            animation: move 2s steps(10) infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>我在世家家园等你快来</div>
+</body>
+
+</html>

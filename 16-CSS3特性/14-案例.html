@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑的大熊</title>
+    <style>
+        div {
+            position: absolute;
+            top: 368px;
+            width: 200px;
+            height: 100px;
+            background: url(media/bear.png) no-repeat;
+            /* 我们元素可以添加多个动画，用逗号隔开。 */
+            animation: move .4s steps(8) infinite, w 3s forwards;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+
+        @keyframes w {
+            0% {
+                transform: translate(0);
+            }
+
+            100% {
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="media/bg1.png" alt="">
+    <img src="media/bg2.png" alt="">
+    <div></div>
+</body>
+
+</html>
