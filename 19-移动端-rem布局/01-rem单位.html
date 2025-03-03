@@ -8,16 +8,17 @@
     <title>Document</title>
     <style>
         html {
+            /* 一个页面就一个html标签，所以就所有的写了rem 的来说，都会根据html 的大小来相匹配 多少rem 就是html 大小的多少倍*/
             font-size: 12px;
         }
-        
+
         div {
             font-size: 12px;
             width: 15rem;
             height: 15rem;
             background-color: purple;
         }
-        
+
         p {
             /* 1. em相对于父元素 的字体大小来说的 */
             /* width: 10em;
@@ -26,7 +27,7 @@
             width: 10rem;
             height: 10rem;
             background-color: pink;
-            /* 3.rem的优点就是可以通过修改html里面的文字大小来改变页面中元素的大小可以整体控制 */
+            /* 3.rem的优点就是 可以通过修改html里面的文字大小来改变页面中元素的大小 可以整体控制 */
         }
     </style>
 </head>
